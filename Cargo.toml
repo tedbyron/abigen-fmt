@@ -1,0 +1,18 @@
+[package]
+name = "abigen-fmt"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fuel-gql-client = "0.5.0"
+fuel-tx = "0.8.1"
+tokio = { version = "1.17.0", features = ["rt-multi-thread"] }
+hex = "0.4.3"
+
+[dependencies.fuels-abigen-macro]
+git = "https://github.com/FuelLabs/fuels-rs"
+branch = "master"
+
+[dependencies.fuels-rs]
+git = "https://github.com/FuelLabs/fuels-rs"
+branch = "master"
