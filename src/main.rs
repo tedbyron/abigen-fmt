@@ -33,8 +33,6 @@ async fn main() {
     );
 
     let (provider, wallet) = setup_test_provider_and_wallet().await;
-    dbg!(&provider);
-    dbg!(&wallet);
     let contract_instance = SimpleContract::new(
         "0x0c0000000000000000000000000000000000000000000000000000000000000b1a".to_string(),
         provider,
@@ -50,4 +48,5 @@ async fn main() {
     );
 
     assert_eq!("0000000003b568d4000000000000002a000000000000000a", encoded);
+    dbg!(encoded);
 }
